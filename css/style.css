@@ -144,7 +144,7 @@ hr {
 }
 /* Home Style */
 header {
-    background: url(../img/header-bg.jpg?v=20240612) no-repeat center top;
+    background: url(../img/header-bg.png?v=20240613) no-repeat center top;
     background-size: cover;
     color: #d9e0e2;
     position: relative;
@@ -158,19 +158,18 @@ header p {
 	letter-spacing: 1px;
 }
 
-.intro-text {
+/* .intro-text {
 	position: relative;
 	padding-top: 580px;
 	padding-left: 0;
 	padding-right: 0;
-	/* padding-bottom: 170px; */
 	max-width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 }
-
+ */
 .intro-text2 {
 	display: flex;
 	flex-direction: column;
@@ -180,6 +179,7 @@ header p {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
+	padding-bottom: 50px;
 }
 
 .intro-text2 a {
@@ -781,3 +781,90 @@ img.img-card{
     }
   }
 /* FINISH CARDS CONFIGURATION */
+
+.row-custom {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: inherit;
+	margin-top: 50px;
+}
+.col-custom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-img{
+	width: 400px;
+	height: 400px;
+}
+
+.img-left {
+	margin-right: 11vw;
+}
+
+.img-right {
+	margin-left: 11vw;
+}
+
+/* @media (max-width: 500px) {
+	.row-custom {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 100px;
+	}
+	.col-custom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.img-left{
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.img-right{
+		margin-top: -60px;
+		margin-left: -30px;
+	}
+
+	.header-img{
+		width: 240px;
+		height: 240px;
+	}
+} */
+
+@media (min-width: 600px) and (max-width: 991px) {
+
+	.container-head .row{
+		margin-left: 0px;
+	}
+
+	.row-custom {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 100px;
+	}
+	.col-custom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.img-left{
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	.img-right{
+		margin-top: -25px;
+	}
+
+	.header-img{
+		width: 280px;
+		height: 280px;
+	}
+}
